@@ -6,3 +6,4 @@ service GameService {
   entity FavoriteGame   as projection on my.FavoriteGame;
 
 }
+annotate GameService.Student with @odata.draft.enabled;
