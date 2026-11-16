@@ -92,11 +92,6 @@
           "pattern": "Student({key}):?query:",
           "name": "StudentObjectPage",
           "target": "StudentObjectPage"
-        },
-        {
-          "pattern": "Student({key})/to_favos({key2}):?query:",
-          "name": "FavoriteGameObjectPage",
-          "target": "FavoriteGameObjectPage"
         }
       ],
       "targets": {
@@ -132,25 +127,7 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Student",
-              "navigation": {
-                "to_favos": {
-                  "detail": {
-                    "route": "FavoriteGameObjectPage"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "FavoriteGameObjectPage": {
-          "type": "Component",
-          "id": "FavoriteGameObjectPage",
-          "name": "sap.fe.templates.ObjectPage",
-          "options": {
-            "settings": {
-              "editableHeaderContent": false,
-              "contextPath": "/Student/to_favos"
+              "contextPath": "/Student"
             }
           }
         }

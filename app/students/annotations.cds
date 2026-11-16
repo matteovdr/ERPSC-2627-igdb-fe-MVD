@@ -26,14 +26,22 @@ annotate service.Student with @(
 
 annotate service.Student with {
   Student_ID @UI.Hidden;
+  First_name @mandatory;
+  Last_name  @mandatory;
+};
+
+annotate service.Game with {
+  Cover_url @UI.IsImageURL;
 };
 
 annotate service.FavoriteGame with @(
-  UI.LineItem: [
-    { Value: Game_ID,          Label: 'Game'     },
-    { Value: to_game.Genre,    Label: 'Genre'    },
-    { Value: to_game.Platform, Label: 'Platform' }
-  ]
+ UI.LineItem: [
+  { Value: to_game.Cover_url, Label: 'Cover'     },
+  { Value: Game_ID,           Label: 'Game'      },
+  { Value: to_game.Genre,     Label: 'Genre'     },
+  { Value: to_game.Publisher, Label: 'Publisher' },
+  { Value: to_game.Platform,  Label: 'Platform'  }
+]
 );
 
 annotate service.FavoriteGame with {
