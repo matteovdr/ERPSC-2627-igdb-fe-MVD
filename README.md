@@ -1,25 +1,11 @@
-# Getting Started
+# IGDB Fiori Elements App
 
-Welcome to your new project.
+Fiori Elements-app bovenop een CAP-back-end. Studenten beheren hun favoriete games.
 
-It contains these folders and files, following our recommended project layout:
+Gemaakt door: Matteo Van Droogenbroeck
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+## Starten
+npm install
+npm run watch-students
 
-
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+Open daarna http://localhost:4004/students/index.html
