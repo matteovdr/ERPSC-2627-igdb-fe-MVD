@@ -19,9 +19,11 @@ entity Student {
                      on to_favos.Student_ID = $self.Student_ID;
 }
 
+@assert.unique.student_game: [Student_ID, Game_ID]
 entity FavoriteGame {
-  key Game_ID    : Integer;
-  key Student_ID : UUID;
+  key ID         : UUID;
+      Student_ID : UUID;
+      Game_ID    : Integer;
       to_game    : Association to Game
                      on to_game.Game_ID = $self.Game_ID;
 }

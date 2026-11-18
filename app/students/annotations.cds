@@ -45,8 +45,10 @@ annotate service.FavoriteGame with @(
 );
 
 annotate service.FavoriteGame with {
+  ID         @UI.Hidden;
   Student_ID @UI.Hidden;
-  Game_ID    @Common.Text            : to_game.Name
+  Game_ID    @mandatory
+             @Common.Text            : to_game.Name
              @Common.TextArrangement : #TextOnly
              @Common.ValueList       : {
                CollectionPath : 'Game',
